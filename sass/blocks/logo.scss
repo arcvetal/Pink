@@ -1,0 +1,44 @@
+.logo {
+	position: relative;
+	height: 63px;
+
+	& a {
+		width: 75px;
+		margin-left: 10px;
+	}
+
+	&--footer {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url(../../img/logo-pink-blue-mobile.svg);
+	}
+}
+
+.logo__image {
+	width: 75px;
+	position: absolute;
+	left: 10px;
+	top: 20px;
+}
+
+@media (min-width: 700px) {
+	.logo {
+		    width: 150px;
+    padding-top: 10px;
+	}
+
+	.logo__image {
+		width: 150px;
+		padding-top: 10px;
+	}
+//
+//		& a {
+//			width: 147px;
+//			height: 41px;
+//		}
+//	}
+//
+//	.logo__image {
+//		background: url(../../img/logo-pink-white-tablet.svg);
+//	}
+}

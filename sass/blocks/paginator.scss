@@ -1,0 +1,28 @@
+.paginator__item {
+	display: none;
+
+	&:checked+.paginator__label {
+		box-sizing: content-box;
+		background-color: white;
+		border-color: black;
+	}
+}
+
+.paginator__label {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 6px;
+	height: 6px;
+	margin-right: 10px;
+	box-sizing: border-box;
+	background-color: #bec2c7;
+	border: 3px solid transparent;
+	border-radius: 50%;
+}
+
+@media (min-width: 700px) {
+	.paginator {
+		order: 4;
+	}
+}

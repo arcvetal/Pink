@@ -1,0 +1,152 @@
+.form__title {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+.form__wrapper-item {
+	padding-left: 20px;
+	padding-right: 20px;
+
+	&--check {
+		background-color: $bg-color;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+
+	&--contact {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	&--os {
+		background-color: $bg-color;
+		padding-bottom: 40px;
+	}
+}
+
+.form__field {
+	margin-bottom: 15px;
+	text-align: left;
+
+	&--check {
+		margin-bottom: 50px;
+	}
+
+	&--radio {
+		margin-bottom: 30px;
+	}
+}
+
+.form__item-title {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $pink-color;
+	margin-bottom: 50px;
+}
+
+.form__item-label{
+	&--text {
+		line-height: 30px;
+		color: $pink-color;
+		text-transform: uppercase;
+		padding-left: 20px;
+	}
+
+	&--check {
+		padding-left: 70px;
+		position: relative;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -10px;
+			width: 39px;
+			height: 39px;
+			box-sizing: border-box;
+			border: 2px solid $light-gray-color;
+			background-color: white;
+
+		}
+	}
+
+	&--radio {
+		padding-left: 70px;
+		position: relative;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -8px;
+			width: 35px;
+			height: 35px;
+			box-sizing: border-box;
+			border: 10px solid white;
+			border-radius: 50%;
+			box-shadow: 0 0 0 2px $light-gray-color;
+			background-color: white;
+		}
+	}
+}
+
+.form__item {
+	&--text {
+		width: 280px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 20px;
+		border: 2px solid $light-gray-color;
+		box-sizing: border-box;
+		font-size: 18px;
+		line-height: 30px;
+		color: $label-color;
+
+		&::placeholder {
+			color: $label-color;
+		}
+	}
+
+	&--check {
+		display: none;
+
+		&:checked+.form__item-label--check::before {
+			background-repeat: no-repeat;
+			background-position: center;
+			background-image: url(../../img/icon-yes-checkbox.svg);
+		}
+	}
+
+	&--radio {
+		display: none;
+
+		&:checked+.form__item-label--radio::before {
+			background-color: $pink-color;
+		}
+	}
+}
+
+.form__textarea {
+	width: 280px;
+	height: 200px;
+	padding-top: 15px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	font-size: 18px;
+	line-height: 30px;
+	color: $label-color;
+}
+
+.form__required-field {
+	line-height: 30px;
+	text-transform: uppercase;
+
+	&--pink {
+		color:$pink-color;
+	}
+}

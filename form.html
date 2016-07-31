@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<title>Форма</title>
 </head>
@@ -9,7 +10,13 @@
 		<header class="main-nav">
 			<ul class="main-nav__list">
 				<li class="main-nav__item">
-					<img src="" alt="logo" class="logo"></li>
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/logo-pink-white-mobile.svg" class="logo__image" width="75" height="23"></a>
+					</div>
+					<button type="button" class="btn  btn--cross">
+					</button>
+				</li>
 				<li class="main-nav__item">
 					<a href="index.html">Главная</a>
 				</li>
@@ -24,90 +31,105 @@
 				</li>
 			</ul>
 			<div class="main-nav__wallpaper  main-nav__wallpaper--short">
-				Фотографии пользователей
 				<div class="main-nav__wrapper-button">
-					<button type="button" class="main-nav__button">
-						<img src="" alt="logo" class="logo"></button>
+					<div class="logo">
+						<a href="index.html">
+							<img src="img/logo-pink-white-mobile.svg" class="logo__image" width="75" height="23"></a>
+					</div>
+					<button type="button" class="btn  btn--toggle">
+					</button>
 				</div>
+				<h1 class="main-nav__intro">Конкурс на самое<br> безбашеное<br> путешествие с Пинк</h1>
 			</div>
 		</header>
-		<form action="#" method="post">
-			<h2></h2>
+		<form class="form" action="#" method="post">
+			<h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
 			<div class="form__wrapper-item  form__wrapper-item--name">
 				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
+					<label for="second-name" class="form__item-label  form__item-label--text">Фамилия:</label>
+					<input name="second-name" id="second-name" type="text" class="form__item  form__item--text" placeholder="Укажите фамилию">
+				</div>
 				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
+					<label for="name" class="form__item-label  form__item-label--text">Имя:</label>
+					<input name="name" id="name" type="text" class="form__item  form__item--text" placeholder="Введите ваше имя">
+				</div>
 				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
+					<label for="father-name" class="form__item-label  form__item-label--text">Отчество:</label>
+					<input name="father-name" id="father-name" type="text" class="form__item  form__item--text" placeholder="Ну и отчество тоже">
+				</div>
 			</div>
 			<div class="form__wrapper-item  form__wrapper-item--check">
-				<h3 class="form__item-title"></h3>
-				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
-				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
-				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
-				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
-				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
-				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
+				<h3 class="form__item-title">Ваши безбашенные<br> достижения в путешествии</h3>
+				<div class="form__field  form__field--check">
+					<input name="shark" id="shark" type="checkbox" class="form__item  form__item--check" checked>
+					<label for="shark" class="form__item-label  form__item-label--check">Сделал селфи с акулой</label>
+				</div>
+				<div class="form__field  form__field--check">
+					<input name="beach" id="beach" type="checkbox" class="form__item  form__item--check" checked>
+					<label for="beach" class="form__item-label  form__item-label--check">Обгорел на пляже</label>
+				</div>
+				<div class="form__field  form__field--check">
+					<input name="chuck" id="chuck" type="checkbox" class="form__item  form__item--check">
+					<label for="chuck" class="form__item-label  form__item-label--check">Видел Чака Норриса</label>
+				</div>
+				<div class="form__field  form__field--check">
+					<input name="souvenir" id="souvenir" type="checkbox" class="form__item  form__item--check">
+					<label for="souvenir" class="form__item-label  form__item-label--check">Накупил сувениров</label>
+				</div>
+				<div class="form__field  form__field--check">
+					<input name="tower" id="tower" type="checkbox" class="form__item  form__item--check" checked>
+					<label for="tower" class="form__item-label  form__item-label--check">Удержал башню</label>
+				</div>
+				<div class="form__field  form__field--check">
+					<input name="hotel" id="hotel" type="checkbox" class="form__item  form__item--check">
+					<label for="hotel" class="form__item-label  form__item-label--check">Разгромил отель</label>
+				</div>
 			</div>
 			<div class="form__wrapper-item  form__wrapper-item--contact">
 				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
+					<label for="phone" class="form__item-label  form__item-label--text">Номерок телефончика</label>
+					<input name="phone" id="phone" type="tel" class="form__item  form__item--text" placeholder="Номер, пожалуйста">
+				</div>
 				<div class="form__field">
-					<label for="" class="form__item-label"></label>
-					<input type="text" class="form__item"></div>
+					<label for="mail" class="form__item-label  form__item-label--text">Адресок почты</label>
+					<input name="mail" id="mail" type="email" class="form__item  form__item--text" placeholder="E-mail, пожалуйста">
+				</div>
 			</div>
 			<div class="form__wrapper-item  form__wrapper-item--os">
-				<h3 class="form__item-title"></h3>
-				<div class="form__field">
-					<input type="text" class="form__item">
-					<label for="" class="form__item-label"></label>
+				<h3 class="form__item-title">С каким приложением путешествовали?</h3>
+				<div class="form__field  form__field--radio">
+					<input name="os" id="ios" type="radio" class="form__item  form__item--radio" checked>
+					<label for="ios" class="form__item-label  form__item-label--radio">Pink для iOS</label>
 				</div>
-				<div class="form__field">
-					<input type="" class="form__item">
-					<label for="" class="form__item-label"></label>
+				<div class="form__field  form__field--radio">
+					<input name="os" id="android" type="radio" class="form__item--radio">
+					<label for="android" class="form__item-label  form__item-label--radio">Pink на Android</label>
 				</div>
-				<div class="form__field">
-					<input type="text" class="form__item">
-					<label for="" class="form__item-label"></label>
+				<div class="form__field  form__field--radio">
+					<input name="os" id="windows" type="radio" class="form__item--radio">
+					<label for="windows" class="form__item-label  form__item-label--radio">Windows Phone</label>
 				</div>
 			</div>
 			<div class="form__wrapper-item">
-				<h3 class="form__item-title"></h3>
-				<textarea name="" id="" cols="30" rows="10" class="form__textarea"></textarea>
+				<h3 class="form__item-title">Опишите свои эмоции</h3>
+				<textarea name="" id="" cols="30" rows="10" class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 			</div>
-			<button type="button" class="btn">Отправить форму</button>
-			<span class="form__required-field">* ‒ обязательные поля</span>
+			<button type="button" class="btn  btn--green">Отправить форму</button>
+			<div class="form__required-field"><span class="form__required-field  form__required-field--pink">*</span> ‒ обязательные поля</div>
 		</form>
 		<footer class="footer">
-			<div class="logo"></div>
+			<div class="logo  logo--footer"></div>
 			<div class="social-block">
 				<ul class="social-block__list">
-					<li class="social-block__item">twitter</li>
-					<li class="social-block__item">facebook</li>
-					<li class="social-block__item">youtube</li>
+					<li class="social-block__item  social-block__item--twitter">twitter</li>
+					<li class="social-block__item  social-block__item--facebook">facebook</li>
+					<li class="social-block__item  social-block__item--youtube">youtube</li>
 				</ul>
 			</div>
 			<div class="footer__copyright">
 				Разработано
 				<a href="https://htmlacademy.ru/">
-					<img src="img/htmlacademy.svg" width="27" height="35" alt="HTML Академия"></a>
+					<img class="footer__logo" src="img/htmlacademy.svg" width="27" height="35" alt="HTML Академия"></a>
 			</div>
 		</footer>
 	</div>

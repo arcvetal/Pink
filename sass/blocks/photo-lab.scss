@@ -1,0 +1,77 @@
+.photo-lab__title {
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+.photo-lab__wrapper {
+	padding-top: 20px;
+	padding-left: 20px;
+	background-color: $bg-color;
+}
+
+.photo-lab__wrapper-image {
+	width: 280px;
+	height: 375px;
+	margin-bottom: 20px;
+}
+
+.photo-lab__console {
+	position: relative;
+	padding-top: 20px;
+	padding-left: 20px;
+
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: -30px;
+		left: -20px;
+		height: 1px;
+		width: 320px;
+		background-color: #dddfe0;
+	}
+}
+
+.photo-lab__wrapper-tools {
+	display: inline-block;
+	width: 80px;
+	padding-bottom: 20px;
+}
+
+.photo-lab__tool {
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+
+	&--crop {
+		background-image: url(../../img/icon-editor-crop.svg);
+	}
+
+	&--fill {
+		background-image: url(../../img/icon-editor-fill.svg);
+	}
+
+	&--contrast {
+		background-image: url(../../img/icon-editor-contrast.svg);
+	}
+}
+
+.photo-lab__scale {
+	position: relative;
+	margin-bottom: 50px;
+	width: 240px;
+	height: 2px;
+	background-color: $label-color;
+}
+.photo-lab__slider {
+	height: 14px;
+	width: 14px;
+	top: -6px;
+	right: 33px;
+	position: absolute;
+	background-color: $bg-color;
+	border: 2px solid $pink-color;
+	box-sizing: border-box;
+	border-radius: 50%
+}

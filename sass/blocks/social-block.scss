@@ -1,0 +1,36 @@
+.social-block {
+	padding-top: 20px;
+}
+
+.social-block__list {
+	@include list;
+}
+
+.social-block__item {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	font-size: 0;
+	box-sizing: border-box;
+	border: 3px solid $socblock-color;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&--twitter {
+		background-image: url(../../img/icon-twitter.svg);
+	}
+
+	&--facebook{
+		background-image: url(../../img/icon-facebook.svg);
+	}
+
+	&--youtube {
+		background-image: url(../../img/icon-youtube.svg);
+	}
+}

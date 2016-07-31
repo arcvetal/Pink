@@ -1,0 +1,79 @@
+.btn {
+	width: 280px;
+	height: 55px;
+	margin-bottom: 30px;
+	color: white;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	background-color: transparent;
+	border: 3px solid white;
+	border-radius: 25px;
+
+	&--toggle {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 50px;
+		height: 24px;
+		border: none;
+		border-radius: 0;
+		background-image: url(/img/icon-menu-burger.svg);
+	}
+
+	&--cross {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		border: none;
+		border-radius: 0;
+		background-image: url(/img/icon-menu-cross.svg);
+	}
+
+	&--like-heart {
+		width: 13px;
+		height: 13px;
+		border: none;
+		border-radius: 0;
+		background-image: url(../../img/icon-heart.svg);
+		background-repeat: no-repeat;
+	}
+
+	&--post {
+		color: $pink-color;
+		margin-left: -20px;
+		border-color: $pink-color;
+		margin-bottom: 12px;
+	}
+
+	&--cancel {
+		margin-left: -20px;
+		color:$gray-color;
+		border-color: $gray-color;
+		cursor: default;
+	}
+
+	&--green {
+		height: 63px;
+		width: 280px;
+		box-sizing: border-box;
+		border-radius: 0;
+		text-transform: uppercase;
+		line-height: 30px;
+		background-color: #2aab6d;
+	}
+}
+
+@media (min-width: 700px) {
+	.btn {
+		&--toggle {
+			top: 40px;
+		}
+
+		&--cross {
+			top: 40px;
+		}
+	}
+}
