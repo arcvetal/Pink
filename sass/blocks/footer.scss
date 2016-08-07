@@ -1,5 +1,9 @@
 .footer {
 	padding-top: 25px;
+
+	&--hidden {
+		display: none;
+	}
 }
 
 .footer__copyright {
@@ -18,8 +22,16 @@
 	.footer {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		padding-left: 40px;
 		padding-right: 40px;
 		padding-bottom: 25px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.footer {
+		padding-left: 130px;
+		padding-right: 130px;
 	}
 }

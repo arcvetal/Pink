@@ -35,6 +35,7 @@
 	&--like-heart {
 		width: 13px;
 		height: 13px;
+		margin-bottom: 0;
 		border: none;
 		border-radius: 0;
 		background-image: url(../../img/icon-heart.svg);
@@ -75,5 +76,31 @@
 		&--cross {
 			top: 40px;
 		}
+
+		&--post {
+			width: 260px;
+		}
+
+		&--cancel {
+			width: 260px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.btn {
+		&--toggle {
+			display: none;
+		}
+
+		&--post {
+			width: 183px;
+			margin: 0;
+		}
+
+		&--cancel {
+			width: 183px;
+		}
+
 	}
 }

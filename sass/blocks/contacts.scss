@@ -38,3 +38,17 @@
 		margin-bottom: 30px;
 	}
 }
+
+@media (min-width: 1200px) {
+	.contacts__title {
+		padding-left: 240px;
+		padding-right: 240px;
+		font-size: 50px;
+	}
+
+	.contacts__item {
+		&--mail {
+			order: 3;
+		}
+	}
+}

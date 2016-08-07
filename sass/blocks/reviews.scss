@@ -38,6 +38,7 @@
 
 	.reviews__diagram-title {
 		padding-top: 50px;
+		margin-top: 0;
 		font-size: 30px;
 		line-height: 36px;
 		color: black;
@@ -91,4 +92,52 @@
 		color: $label-color;
 	}
 
+}
+
+@media (min-width: 1200px) {
+	.reviews__diagram {
+		padding-bottom: 100px;
+		padding-left: 490px;
+		padding-right: 230px;
+		background-color: $bg-color;
+		background-position: 130px 84px, 112px 30px;
+	}
+
+	.reviews__diagram-time {
+		left: 175px;
+	}
+
+	.reviews__text {
+		position: relative;
+		padding-top: 170px;
+		padding-left: 240px;
+		padding-right: 240px;
+		background-image: url(../../img/icon-quotes.svg);
+		background-repeat: no-repeat;
+		background-position: center 35px;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 22px;
+			height: 42px;
+			top: 190px;
+			left: 130px;
+			background-image: url(../../img/icon-review-arrow-left.svg);
+			background-repeat: no-repeat;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 22px;
+			height: 42px;
+			top: 190px;
+			right: 130px;
+			background-image: url(../../img/icon-review-arrow-right.svg);
+			background-repeat: no-repeat;
+		}
+	}
 }

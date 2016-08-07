@@ -4,14 +4,53 @@
 	background-position: left 176px, top;
 	background-repeat: no-repeat;
 
+	&--short {
+		height: 235px;
+		background: url(../../img/bg-back-mobile@1x.jpg);
+		background-position:top;
+	}
+}
+
+.page-header__title {
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.2;
+	color: white;
 }
 
 @media (min-width: 700px) {
 	.page-header {
-	background:url(../img/iphone-hand-tablet@1x.png),
-		url(../../img/bg-back-tablet@1x.jpg);
-	background-position: center 184px, top;
-	background-repeat: no-repeat;
+		background:url(../img/iphone-hand-tablet@1x.png),
+			url(../../img/bg-back-tablet@1x.jpg);
+		background-position: center 184px, top;
+		background-repeat: no-repeat;
 		@include clearfix;
+
+		&--short {
+			height: 440px;
+			background: url(../../img/bg-back-tablet@1x.jpg);
+			background-position:top;
+		}
 	}
+
+	.page-header__title {
+		font-size: 50px;
+		padding-top: 20px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.page-header {
+		&--short {
+			height: 395px;
+		}
+	}
+	.page-header__title {
+		padding-left: 400px;
+		padding-right: 400px;
+	}
+
 }

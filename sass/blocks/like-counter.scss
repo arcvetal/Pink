@@ -8,3 +8,25 @@
 	text-transform: uppercase;
 	color: $pink-color;
 }
+
+@media (min-width: 700px) {
+	.like-counter {
+		margin-top: auto;
+	}
+}
+
+@media (min-width: 1200px) {
+	.like-counter {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+
+		&--wide {
+			order: 2;
+			width: 120px;
+			margin: 0;
+		}
+	}
+}

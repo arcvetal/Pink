@@ -8,6 +8,9 @@
 	}
 
 	&--footer {
+		width: 147px;
+		height: 41px;
+		margin: 0 auto;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-image: url(../../img/logo-pink-blue-mobile.svg);
@@ -22,23 +25,26 @@
 }
 
 @media (min-width: 700px) {
-	.logo {
-		    width: 150px;
-    padding-top: 10px;
-	}
 
 	.logo__image {
 		width: 150px;
 		padding-top: 10px;
 	}
-//
-//		& a {
-//			width: 147px;
-//			height: 41px;
-//		}
-//	}
-//
-//	.logo__image {
-//		background: url(../../img/logo-pink-white-tablet.svg);
-//	}
+
+	.logo {
+		&--footer {
+			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.logo {
+		&--footer {
+			background-image: url(../../img/logo-pink-blue-desktop.svg);
+		}
+	}
+	.logo__image {
+		padding-left: 125px;
+	}
 }

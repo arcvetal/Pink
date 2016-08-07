@@ -1,4 +1,5 @@
 .price {
+	overflow: hidden;
 	padding-top: 70px;
 	padding-bottom: 30px;
 	background-color: $bg-color;
@@ -8,10 +9,13 @@
 }
 
 .price__table {
+	margin-left: -540px;
 	margin-bottom: 30px;
+	width: 620px;
+	table-layout: fixed;
 }
 
-.price__title {
+.price__title-cell {
 	background-color: $label-color;
 	width: 280px;
 	box-sizing: border-box;
@@ -19,27 +23,12 @@
 	padding-bottom: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
-	font-size: 18px;
-	line-height: 30px;
-	font-weight: 700;
-	color: white;
-	text-transform: uppercase;
-	border: 2px solid red;
-
-
-
+	border: 2px solid #e5e5e5;
+	border-top-color: #f2f2f2;
 
 	&--empty {
 		opacity: 0;
 		border: 0;
-	}
-
-	&--thin {
-		padding: 0;
-		margin: 0;
-		border: none;
-		font-size: 24px;
-		font-weight: 300;
 	}
 
 	&--hit {
@@ -54,25 +43,43 @@
 			top: 5px;
 			left: -30px;
 			transform: rotate(-45deg);
+			color: white;
 			font-size: 14px;
 			line-height: 30px;
 			font-weight: 300;
 			background-color: $pink-color;
 		}
 	}
-
-
 }
+
+.price__title {
+	margin: 0;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+
+	&--thin {
+		padding: 0;
+		border: none;
+		font-size: 24px;
+		font-weight: 300;
+	}
+}
+
 
 .price__item {
 	border: 2px solid #e5e5e5;
 	padding-top: 10px;
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-bottom: 10px;
 	color: $label-color;
+	text-transform: uppercase;
 	text-align: left;
+	background-color: white;
 	background-repeat: no-repeat;
-	background-position: 115px center;
+	background-position: 233px center;
 
 	&--yes {
 		background-size: 30px;
@@ -97,11 +104,14 @@
 		box-sizing: border-box;
 	}
 
-	.price__title {
-		width: 150px;
-		font-size: 16px;
+	.price__title-cell {
+		width: 155px;
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	.price-title {
+		font-size: 16px;
 
 		&--thin {
 			font-size: 18px;
@@ -109,12 +119,26 @@
 	}
 
 	.price__item {
-		width: 150px;
 		background-position: center;
-
+		text-transform: none;
+		padding-left: 15px;
 	}
 
 	.price__text-hidden {
 		display: none;
+	}
+}
+
+
+
+@media (min-width: 1200px) {
+	.price {
+		padding-top: 100px;
+		background-position: center 0;
+	}
+
+	.price__table {
+		margin-left: 130px;
+		width: 940px;
 	}
 }
