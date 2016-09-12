@@ -7,43 +7,55 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="main-nav">
-			<ul class="main-nav__list">
-				<li class="main-nav__item">
-					<div class="logo">
-						<a href="index.html">
-							<img src="img/logo-pink-white-mobile.svg" class="logo__image" width="75" height="23"></a>
+		<header class="page-header  page-header--short">
+			<nav class="main-nav">
+				<div class="main-nav__wrapper">
+					<div class="main-nav__menu">
+						<div class="logo">
+							<a href="index.html">
+								<picture>
+									<source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+									<img src="img/logo-pink-white-mobile.svg" class="logo__image" width="75" height="23">
+								</picture>
+							</a>
+						</div>
+						<button type="button" class="btn  btn--cross">
+						</button>
 					</div>
-					<button type="button" class="btn  btn--cross">
-					</button>
-				</li>
-				<li class="main-nav__item">
-					<a href="index.html">Главная</a>
-				</li>
-				<li class="main-nav__item">
-					<a href="photo.html">Фотографии</a>
-				</li>
-				<li class="main-nav__item">
-					<a>Конкурс</a>
-				</li>
-				<li class="main-nav__item">
-					<a href="https://htmlacademy.ru/">Html academy</a>
-				</li>
-			</ul>
-			<div class="main-nav__wallpaper  main-nav__wallpaper--short">
-				<div class="main-nav__wrapper-button">
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
+							<a>Главная</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="photo.html">Фотографии</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="form.html">Конкурс</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="https://htmlacademy.ru/">Html academy</a>
+						</li>
+					</ul>
+				</div>
+				<div class="main-nav__wrapper-button  main-nav__wrapper-button--short">
 					<div class="logo">
 						<a href="index.html">
-							<img src="img/logo-pink-white-mobile.svg" class="logo__image" width="75" height="23"></a>
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+							<source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+							<img src="img/logo-pink-white-mobile.svg" class="logo__image" width="75" height="23">
+						</picture>
+						</a>
 					</div>
 					<button type="button" class="btn  btn--toggle">
 					</button>
 				</div>
-				<h1 class="main-nav__intro">Конкурс на самое<br> безбашеное<br> путешествие с Пинк</h1>
-			</div>
+			</nav>
+			<h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
 		</header>
 		<form class="form" action="#" method="post">
-			<h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
+			<h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+			<h2 class="form__title  form__title--hidden">Пожалуйста, заполните форму ниже:</h2>
 			<div class="form__wrapper-item  form__wrapper-item--name">
 				<div class="form__field">
 					<label for="second-name" class="form__item-label  form__item-label--text">Фамилия:</label>
@@ -59,7 +71,7 @@
 				</div>
 			</div>
 			<div class="form__wrapper-item  form__wrapper-item--check">
-				<h3 class="form__item-title">Ваши безбашенные<br> достижения в путешествии</h3>
+				<h3 class="form__item-title  form__item-title--check">Ваши безбашенные достижения в путешествии</h3>
 				<div class="form__field  form__field--check">
 					<input name="shark" id="shark" type="checkbox" class="form__item  form__item--check" checked>
 					<label for="shark" class="form__item-label  form__item-label--check">Сделал селфи с акулой</label>
@@ -86,17 +98,20 @@
 				</div>
 			</div>
 			<div class="form__wrapper-item  form__wrapper-item--contact">
-				<div class="form__field">
-					<label for="phone" class="form__item-label  form__item-label--text">Номерок телефончика</label>
-					<input name="phone" id="phone" type="tel" class="form__item  form__item--text" placeholder="Номер, пожалуйста">
+				<h3 class="form__item-title  form__item-title--contact">Контактная информация</h3>
+				<div class="form__field  form__field--contact">
+					<label for="phone" class="form__item-label  form__item-label--text  form__item-label--contact">
+					Номер<span class="form__item-label  form__item-label--hidden">ок</span> телефон<span class="form__item-label  form__item-label--hidden">чик</span>а</label>
+					<input name="phone" id="phone" type="tel" class="form__item  form__item--text  form__item--contact" placeholder="Номер, пожалуйста">
 				</div>
-				<div class="form__field">
-					<label for="mail" class="form__item-label  form__item-label--text">Адресок почты</label>
-					<input name="mail" id="mail" type="email" class="form__item  form__item--text" placeholder="E-mail, пожалуйста">
+				<div class="form__field  form__field--contact">
+					<label for="mail" class="form__item-label  form__item-label--text  form__item-label--contact">
+					Адрес<span class="form__item-label  form__item-label--hidden">ок</span> почты</label>
+					<input name="mail" id="mail" type="email" class="form__item  form__item--text  form__item--contact" placeholder="E-mail, пожалуйста">
 				</div>
 			</div>
 			<div class="form__wrapper-item  form__wrapper-item--os">
-				<h3 class="form__item-title">С каким приложением путешествовали?</h3>
+				<h3 class="form__item-title  form__item-title--radio">С каким приложением путешествовали?</h3>
 				<div class="form__field  form__field--radio">
 					<input name="os" id="ios" type="radio" class="form__item  form__item--radio" checked>
 					<label for="ios" class="form__item-label  form__item-label--radio">Pink для iOS</label>
@@ -110,9 +125,9 @@
 					<label for="windows" class="form__item-label  form__item-label--radio">Windows Phone</label>
 				</div>
 			</div>
-			<div class="form__wrapper-item">
-				<h3 class="form__item-title">Опишите свои эмоции</h3>
-				<textarea name="" id="" cols="30" rows="10" class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+			<div class="form__wrapper-item  form__wrapper-item--textarea">
+				<h3 class="form__item-title  form__item-title--textarea">Опишите свои эмоции</h3>
+				<textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 			</div>
 			<button type="button" class="btn  btn--green">Отправить форму</button>
 			<div class="form__required-field"><span class="form__required-field  form__required-field--pink">*</span> ‒ обязательные поля</div>
