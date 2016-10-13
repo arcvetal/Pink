@@ -9,6 +9,7 @@
 	background-color: transparent;
 	border: 3px solid white;
 	border-radius: 25px;
+	outline: 0;
 
 	&--toggle {
 		position: absolute;
@@ -64,6 +65,15 @@
 		text-transform: uppercase;
 		line-height: 30px;
 		background-color: #2aab6d;
+	}
+
+	&:hover {
+		color: $pink-color;
+		background-color: white;
+	}
+
+	&:active {
+		color: rgba($pink-color, 0.3);
 	}
 }
 

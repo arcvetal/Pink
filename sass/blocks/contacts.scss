@@ -9,6 +9,17 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-bottom: 20px;
+
+	&--mail span:hover {
+		cursor: pointer;
+		text-decoration: underline;
+		color: $label-color;
+	}
+
+	&--mail span:active {
+		text-decoration: none;
+		color: rgba($label-color, 0.3);
+	}
 }
 
 .contacts__info {
@@ -18,6 +29,8 @@
 	font-weight: 300;
 	color: $pink-color;
 }
+
+
 
 @media (min-width: 700px) {
 	.contacts__title {

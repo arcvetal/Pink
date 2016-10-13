@@ -31,6 +31,10 @@
 		padding-top: 10px;
 	}
 
+	.logo--tablet::hover {
+		background-image: url(../../img/logo-pink-white-tablet-hover.svg);
+	}
+
 	.logo {
 		&--footer {
 			margin: 0;
