@@ -57,7 +57,7 @@
 	}
 }
 
-.form__item-label{
+.form__item-label {
 	&--text {
 		line-height: 30px;
 		color: $pink-color;
@@ -79,7 +79,15 @@
 			box-sizing: border-box;
 			border: 2px solid $light-gray-color;
 			background-color: white;
+		}
 
+		&:hover::before {
+			cursor: pointer;
+			border-color: $label-color;
+		}
+
+		&:active::before {
+			border-color: $pink-color;
 		}
 	}
 
@@ -100,10 +108,22 @@
 			box-shadow: 0 0 0 2px $light-gray-color;
 			background-color: white;
 		}
+
+		&:hover::before {
+			cursor: pointer;
+			box-shadow: 0 0 0 2px $label-color;
+		}
+
+		&:active::before {
+			background-color: $pink-color;
+			box-shadow: 0 0 0 2px $pink-color;
+		}
 	}
 }
 
 .form__item {
+	outline: none;
+
 	&--text {
 		width: 280px;
 		padding-top: 15px;
@@ -117,6 +137,14 @@
 
 		&::placeholder {
 			color: $label-color;
+		}
+
+		&:hover {
+			border-color: $label-color;
+		}
+
+		&:focus {
+			border-color: $pink-color;
 		}
 	}
 
@@ -147,6 +175,7 @@
 	box-sizing: border-box;
 	font-size: 18px;
 	line-height: 30px;
+	outline: none;
 
 
 	&::placeholder {

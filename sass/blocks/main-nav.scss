@@ -45,6 +45,14 @@
 		height: 63px;
 		padding-top: 15px;
 		box-sizing: border-box;
+
+		&:hover {
+			color: $pink-color;
+		}
+
+		&:active {
+			color: rgba($pink-color, 0.3);
+		}
 	}
 }
 
@@ -145,6 +153,7 @@
 			text-transform: none;
 
 			&:hover {
+				color: #fff;
 				border-bottom: 2px solid #fff;
 			}
 

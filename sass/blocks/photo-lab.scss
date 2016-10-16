@@ -45,16 +45,40 @@
 	background-repeat: no-repeat;
 
 	&--crop {
-		background-image: url(../../img/icon-editor-crop.svg);
-	}
+			background-image: url(../../img/icon-editor-crop.svg);
 
-	&--fill {
-		background-image: url(../../img/icon-editor-fill.svg);
-	}
+			&:hover {
+				background-image: url(../../img/icon-editor-crop-hover.svg);
+			}
 
-	&--contrast {
-		background-image: url(../../img/icon-editor-contrast.svg);
-	}
+			&:active {
+				background-image: url(../../img/icon-editor-crop-pink.svg);
+			}
+		}
+
+		&--fill {
+			background-image: url(../../img/icon-editor-fill.svg);
+
+			&:hover {
+				background-image: url(../../img/icon-editor-fill-hover.svg);
+			}
+
+			&:active {
+				background-image: url(../../img/icon-editor-fill-pink.svg);
+			}
+		}
+
+		&--contrast {
+			background-image: url(../../img/icon-editor-contrast.svg);
+
+			&:hover {
+				background-image: url(../../img/icon-editor-contrast-hover.svg);
+			}
+
+			&:active {
+				background-image: url(../../img/icon-editor-contrast-pink.svg);
+			}
+		}
 }
 
 .photo-lab__scale {
@@ -64,6 +88,7 @@
 	height: 2px;
 	background-color: $label-color;
 }
+
 .photo-lab__slider {
 	height: 14px;
 	width: 14px;
@@ -73,7 +98,12 @@
 	background-color: $bg-color;
 	border: 2px solid $pink-color;
 	box-sizing: border-box;
-	border-radius: 50%
+	border-radius: 50%;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $pink-color;
+	}
 }
 
 .photo-lab__wrapper-scale--hidden {
@@ -109,17 +139,29 @@
 		background-size: 24px;
 
 		&--crop {
-			background-image: url(../../img/icon-editor-crop.svg);
+			background-image: url(../../img/icon-editor-crop-pink.svg);
+
+			&:hover {
+				background-image: url(../../img/icon-editor-crop-pink.svg);
+			}
 		}
 
 		&--fill {
 			background-image: url(../../img/icon-editor-fill-pink.svg);
+
+			&:hover {
+				background-image: url(../../img/icon-editor-fill-pink.svg);
+			}
 		}
 
 		&--contrast {
 			background-position: 5px 5px;
 			background-size: 16px;
 			background-image: url(../../img/icon-editor-contrast-pink.svg);
+
+			&:hover {
+				background-image: url(../../img/icon-editor-contrast-pink.svg);
+			}
 		}
 	}
 
@@ -175,6 +217,7 @@
 
 	.photo-lab__tool {
 		background-size: 24px;
+
 	}
 
 	.photo-lab__scale {

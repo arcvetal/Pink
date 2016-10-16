@@ -11,6 +11,15 @@
 	border-radius: 25px;
 	outline: 0;
 
+		&:hover {
+			color: $pink-color;
+			background-color: white;
+		}
+
+		&:active {
+			color: rgba($pink-color, 0.3);
+		}
+
 	&--toggle {
 		position: absolute;
 		top: 20px;
@@ -19,7 +28,15 @@
 		height: 24px;
 		border: none;
 		border-radius: 0;
-		background-image: url(/img/icon-menu-burger.svg);
+		background-image: url(../../img/icon-menu-burger.svg);
+
+		&:hover {
+			background: url(../../img/icon-menu-burger-hover.svg);
+		}
+
+		&:active {
+			background: url(../../img/icon-menu-burger-act.svg);
+		}
 	}
 
 	&--cross {
@@ -31,6 +48,14 @@
 		border: none;
 		border-radius: 0;
 		background-image: url(/img/icon-menu-cross.svg);
+
+		&:hover {
+			background: url(/img/icon-menu-cross-hover.svg);
+		}
+
+		&:active {
+			background-image: url(/img/icon-menu-cross-act.svg);
+		}
 	}
 
 	&--like-heart {
@@ -41,6 +66,10 @@
 		border-radius: 0;
 		background-image: url(../../img/icon-heart.svg);
 		background-repeat: no-repeat;
+
+		&:hover {
+			background-color: transparent;
+		}
 	}
 
 	&--post {
@@ -48,13 +77,34 @@
 		margin-left: -20px;
 		border-color: $pink-color;
 		margin-bottom: 12px;
+
+		&:hover {
+			color: white;
+			background-color: $pink-color;
+		}
+
+		&:active {
+			color: rgba(white, 0.3);
+		}
 	}
 
 	&--cancel {
 		margin-left: -20px;
-		color:$gray-color;
-		border-color: $gray-color;
-		cursor: default;
+		color: rgba($label-color, 0.1);
+		border-color: rgba($label-color, 0.1);
+
+		&:hover {
+			cursor: pointer;
+			color: rgba($label-color, 0.3);
+			border-color: rgba($label-color, 0.3);
+			background-color: transparent;
+		}
+
+		&:active {
+			color: rgba(white, 0.3);
+			border-color: transparent;
+			background-color: rgba($label-color, 0.3);
+		}
 	}
 
 	&--green {
@@ -65,16 +115,18 @@
 		text-transform: uppercase;
 		line-height: 30px;
 		background-color: #2aab6d;
+
+		&:hover {
+			color: white;
+			background-color: #1c9b5e;
+		}
+
+		&:active {
+			color: rgba(white, 0.3);
+		}
 	}
 
-	&:hover {
-		color: $pink-color;
-		background-color: white;
-	}
 
-	&:active {
-		color: rgba($pink-color, 0.3);
-	}
 }
 
 @media (min-width: 700px) {

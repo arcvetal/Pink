@@ -128,6 +128,15 @@
 			background-repeat: no-repeat;
 		}
 
+		&:hover::before {
+			cursor: pointer;
+			background-image: url(../../img/icon-review-arrow-left-hover.svg);
+		}
+
+		&:active::before {
+			background-image: url(../../img/icon-review-arrow-left-act.svg);
+		}
+
 		&::after {
 			content: "";
 			display: block;
@@ -138,6 +147,15 @@
 			right: 130px;
 			background-image: url(../../img/icon-review-arrow-right.svg);
 			background-repeat: no-repeat;
+		}
+
+		&:hover::after {
+			cursor: pointer;
+			background-image: url(../../img/icon-review-arrow-right-hover.svg);
+		}
+
+		&:active::after {
+			background-image: url(../../img/icon-review-arrow-right-act.svg);
 		}
 	}
 }

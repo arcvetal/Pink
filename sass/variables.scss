@@ -1,7 +1,7 @@
 $label-color: #283645;   //основной темно-синий
 $bg-color: #f2f2f2;   //серый фон
 $pink-color: #d22856; //розовый
-$gray-color:#dddfe0; //светло-серый (цвет неактивной кнопки)
+$gray-color:rgba($label-color, 0.1); //светло-серый (цвет неактивной кнопки)
 $socblock-color: #e9ebec;  //обводка соц кнопок
 $light-gray-color:#e5e5e5; //обводка полей форм
 
