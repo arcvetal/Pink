@@ -1,7 +1,7 @@
 .price {
 	overflow: hidden;
-	padding-top: 70px;
-	padding-bottom: 30px;
+	padding-top: 90px;
+	padding-bottom: 40px;
 	background-color: $bg-color;
 	background-position: center -30px;
 	background-image: url(../../img/bg-triangle-white.svg);
@@ -10,7 +10,7 @@
 
 .price__table {
 	margin-left: -540px;
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 	width: 620px;
 	table-layout: fixed;
 }
@@ -39,9 +39,9 @@
 			content:"ХИТ";
 			position: absolute;
 			display: block;
-			width: 100px;
-			top: 5px;
-			left: -30px;
+			width: 136px;
+			top: 15px;
+			left: -45px;
 			transform: rotate(-45deg);
 			color: white;
 			font-size: 14px;
@@ -71,15 +71,15 @@
 
 .price__item {
 	border: 2px solid #e5e5e5;
-	padding-top: 10px;
-	padding-left: 20px;
-	padding-bottom: 10px;
+	padding-top: 16px;
+	padding-left: 22px;
+	padding-bottom: 18px;
 	color: $label-color;
 	text-transform: uppercase;
 	text-align: left;
 	background-color: white;
 	background-repeat: no-repeat;
-	background-position: 233px center;
+	background-position: 231px center;
 
 	&--yes {
 		background-size: 30px;

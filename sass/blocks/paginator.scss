@@ -1,3 +1,7 @@
+.paginator {
+	padding-left: 10px;
+}
+
 .paginator__item {
 	display: none;
 
@@ -14,7 +18,7 @@
 	cursor: pointer;
 	width: 6px;
 	height: 6px;
-	margin-right: 10px;
+	margin-right: 13px;
 	box-sizing: border-box;
 	background-color: #bec2c7;
 	border: 3px solid transparent;

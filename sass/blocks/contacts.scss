@@ -1,4 +1,10 @@
+.contacts {
+	padding-top: 26px;
+	padding-bottom: 12px;
+}
+
 .contacts__title {
+	margin-bottom: 37px;
 	font-size: 24px;
 	font-weight: 300;
 }
@@ -10,15 +16,19 @@
 	padding-right: 20px;
 	margin-bottom: 20px;
 
-	&--mail span:hover {
-		cursor: pointer;
-		text-decoration: underline;
-		color: $label-color;
-	}
+	&--mail {
+		margin-bottom: 30px;
 
-	&--mail span:active {
-		text-decoration: none;
-		color: rgba($label-color, 0.3);
+		& span:hover {
+			cursor: pointer;
+			text-decoration: underline;
+			color: $label-color;
+		}
+
+		& span:active {
+			text-decoration: none;
+			color: rgba($label-color, 0.3);
+		}
 	}
 }
 

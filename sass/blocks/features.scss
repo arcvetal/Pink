@@ -1,5 +1,5 @@
 .features {
-	padding-top: 20px;
+	padding-top: 28px;
 }
 
 .features__title {
@@ -7,7 +7,13 @@
 	font-weight: 300;
 	color: $label-color;
 
+	&--thin {
+		padding-top: 20px;
+		margin-bottom: 13px;
+	}
+
 	&--short {
+		margin-bottom: 15px;
 		font-size: 18px;
 		line-height: 24px;
 		font-weight: 700;
@@ -15,11 +21,11 @@
 }
 
 .features__content {
-	padding-top: 50px;
-	padding-bottom: 320px;
+	padding-top: 82px;
+	padding-bottom: 290px;
 	background-color: $bg-color;
 	background-repeat: no-repeat;
-	background-position: 0 -50px, center 498px;;
+	background-position: 0 -50px, center 527px;;
 	background-image: url(../../img/bg-triangle-white.svg),
 		url(../../img/iphone-screen-mobile@1x.png);
 }
@@ -27,6 +33,7 @@
 .features__wrapper {
 	padding-left: 20px;
 	padding-right: 20px;
+	margin-bottom: 27px;
 	font-size: 14px;
 	line-height: 24px;
 }
