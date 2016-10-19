@@ -7,15 +7,16 @@
 }
 
 .footer__copyright {
-	padding-top: 20px;
+	padding-top: 34px;
 	font-size: 14px;
 	line-height: 18px;
 }
 
 .footer__logo {
 	display: inline-block;
-	vertical-align: bottom;
 	width: 37px;
+	padding-left: 7px;
+	vertical-align: bottom;
 }
 
 @media (min-width: 700px) {

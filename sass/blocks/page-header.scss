@@ -5,7 +5,7 @@
 	background-repeat: no-repeat;
 
 	&--short {
-		height: 235px;
+		min-height: 240px;
 		background: url(../../img/bg-back-mobile@1x.jpg);
 		background-position:top;
 	}
@@ -14,6 +14,7 @@
 .page-header__title {
 	padding-left: 40px;
 	padding-right: 40px;
+	padding-top: 15px;
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 1.2;
