@@ -1,4 +1,5 @@
 .form__title {
+	padding-top: 25px;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 14px;
@@ -11,36 +12,51 @@
 }
 
 .form__wrapper-item {
+	padding-top: 22px;
+	padding-bottom: 28px;
 	padding-left: 20px;
 	padding-right: 20px;
 
 	&--check {
 		background-color: $bg-color;
 		padding-top: 30px;
-		padding-bottom: 20px;
+		padding-bottom: 54px;
 	}
 
 	&--contact {
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 28px;
+		padding-bottom: 38px;
 	}
 
 	&--os {
 		background-color: $bg-color;
-		padding-bottom: 40px;
+		padding-bottom: 47px;
+	}
+
+	&--textarea {
+		padding-top: 43px;
+		padding-bottom: 38px;
 	}
 }
 
 .form__field {
-	margin-bottom: 15px;
+	margin-bottom: 16px;
 	text-align: left;
 
 	&--check {
-		margin-bottom: 50px;
+		margin-bottom: 56px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&--radio {
-		margin-bottom: 30px;
+		margin-bottom: 49px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -55,10 +71,27 @@
 	&--contact {
 		display: none;
 	}
+
+	&--check {
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top: 5px;
+		margin-bottom: 47px;
+	}
+
+	&--radio {
+		margin-bottom: 41px;
+	}
+
+	&--textarea {
+		margin-bottom: 19px;
+	}
 }
 
 .form__item-label {
 	&--text {
+		display: block;
+		margin-bottom: 5px;
 		line-height: 30px;
 		color: $pink-color;
 		text-transform: uppercase;
@@ -66,8 +99,9 @@
 	}
 
 	&--check {
-		padding-left: 70px;
 		position: relative;
+		padding-left: 70px;
+		font-size: 18px;
 
 		&::before {
 			content: "";
@@ -92,14 +126,16 @@
 	}
 
 	&--radio {
-		padding-left: 70px;
 		position: relative;
+		padding-left: 70px;
+		font-size: 18px;
 
 		&::before {
 			content: "";
 			display: block;
 			position: absolute;
-			top: -8px;
+			top: -6px;
+			left: 2px;
 			width: 35px;
 			height: 35px;
 			box-sizing: border-box;
@@ -184,6 +220,8 @@
 }
 
 .form__required-field {
+	padding-top: 2px;
+	margin-bottom: 14px;
 	line-height: 30px;
 	text-transform: uppercase;
 
