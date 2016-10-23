@@ -132,16 +132,26 @@
 
 @media (min-width: 700px) {
 	.btn {
+
+		&--download {
+			width: 300px;
+		}
 		&--toggle {
-			top: 40px;
+			top: 44px;
+			right: 40px;
 		}
 
 		&--cross {
 			top: 40px;
 		}
 
+		&--like-heart {
+			margin-right: 3px;
+		}
+
 		&--post {
 			width: 260px;
+			margin-bottom: 25px;
 		}
 
 		&--cancel {

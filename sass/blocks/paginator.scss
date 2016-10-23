@@ -36,6 +36,11 @@
 @media (min-width: 700px) {
 	.paginator {
 		order: 4;
+		padding-top: 30px;
+
+		&--table {
+			display: none;
+		}
 	}
 }
 

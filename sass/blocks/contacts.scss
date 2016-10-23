@@ -43,6 +43,10 @@
 
 
 @media (min-width: 700px) {
+	.contacts {
+		padding-top: 13px;
+	}
+
 	.contacts__title {
 		font-size: 40px;
 		line-height: 1.2;
@@ -54,11 +58,23 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		padding-top: 6px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 17px;
 	}
 
 	.contacts__item {
 		width: 220px;
-		margin-bottom: 30px;
+		margin-bottom: 51px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.contacts__info {
+		padding-top: 7px;
 	}
 }
 

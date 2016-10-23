@@ -128,11 +128,15 @@
 	padding-bottom: 12px;
 }
 
+
+
 @media (min-width: 700px) {
 	.photo-lab__wrapper {
 		display: flex;
 		padding-left: 40px;
 		padding-right: 40px;
+		padding-top: 58px;
+		padding-bottom: 10px;
 		justify-content: space-between;
 
 	}
@@ -143,20 +147,32 @@
 		margin-bottom: 30px;
 	}
 
+	.photo-lab__title {
+		padding-top: 27px;
+		margin-bottom: 68px;
+		font-size: 18px;
+	}
+
 	.photo-lab__wrapper-tools {
 		display: flex;
 		position: relative;
-		height: 72px;
+		height: 56px;
 		width: 100%;
-		padding-top: 25px;
+		padding-top: 7px;
+		margin-bottom: 16px;
 		box-sizing: border-box;
 		border-bottom: 1px solid $gray-color;
+	}
+
+	.photo-lab__container {
+		padding-left: 0;
 	}
 
 	.photo-lab__tool {
 		background-size: 24px;
 
 		&--crop {
+			margin-left: 2px;
 			background-image: url(../../img/icon-editor-crop-pink.svg);
 
 			&:hover {
@@ -165,6 +181,8 @@
 		}
 
 		&--fill {
+			margin-left: 2px;
+			margin-top: 3px;
 			background-image: url(../../img/icon-editor-fill-pink.svg);
 
 			&:hover {
@@ -173,7 +191,7 @@
 		}
 
 		&--contrast {
-			background-position: 5px 5px;
+			background-position: 8px 5px;
 			background-size: 16px;
 			background-image: url(../../img/icon-editor-contrast-pink.svg);
 
@@ -190,6 +208,7 @@
 
 	.photo-lab__console {
 		width: 275px;
+		padding-top: 0;
 
 		&::after {
 			display: none;
@@ -198,6 +217,7 @@
 
 	.photo-lab__wrapper-scale {
 		display: none;
+		margin-left: 4px;
 
 		&--hidden {
 			display: block;
@@ -210,13 +230,20 @@
 	}
 
 	.photo-lab__slider {
+		right: 43px;
+
 		&--fill {
-			right: 150px;
+			right: 165px;
 		}
 
 		&--contrast {
-			right: 100px;
+			right: 91px;
 		}
+	}
+
+	.photo-lab__btn-wrapper {
+		margin-left: 7px;
+		padding-top: 20px;
 	}
 
 }

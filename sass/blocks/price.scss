@@ -94,6 +94,8 @@
 
 @media (min-width: 700px) {
 	.price {
+		padding-top: 86px;
+		padding-bottom: 34px;
 		background-position: center -20px;
 	}
 
@@ -106,11 +108,18 @@
 
 	.price__title-cell {
 		width: 155px;
+		padding-top: 11px;
+		padding-bottom: 8px;
 		padding-left: 0;
 		padding-right: 0;
+
+		&--hit::before {
+			top: 4px;
+			left: -48px;
+		}
 	}
 
-	.price-title {
+	.price__title {
 		font-size: 16px;
 
 		&--thin {
@@ -122,6 +131,8 @@
 		background-position: center;
 		text-transform: none;
 		padding-left: 15px;
+		padding-top: 9px;
+		padding-bottom: 11px;
 	}
 
 	.price__text-hidden {
