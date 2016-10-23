@@ -157,6 +157,13 @@
 		&--cancel {
 			width: 260px;
 		}
+
+		&--green {
+			order: 6;
+			width: 300px;
+			height: 63px;
+			border: none;
+		}
 	}
 }
 
