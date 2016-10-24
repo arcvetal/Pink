@@ -79,6 +79,18 @@
 }
 
 @media (min-width: 1200px) {
+	.contacts {
+		padding-top: 22px;
+		padding-bottom: 0;
+	}
+
+	.contacts__wrapper {
+		padding-top: 19px;
+		padding-left: 118px;
+		padding-right: 118px;
+		padding-bottom: 0;
+	}
+
 	.contacts__title {
 		padding-left: 240px;
 		padding-right: 240px;
@@ -89,5 +101,9 @@
 		&--mail {
 			order: 3;
 		}
+	}
+
+	.contacts__info {
+		padding-top: 26px;
 	}
 }

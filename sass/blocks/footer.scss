@@ -37,7 +37,16 @@
 
 @media (min-width: 1200px) {
 	.footer {
+		padding-top: 56px;
 		padding-left: 130px;
-		padding-right: 130px;
+		padding-right: 126px;
+	}
+
+	.footer__copyright {
+		font-size: 18px;
+	}
+
+	.footer__logo {
+		padding-left: 3px;
 	}
 }

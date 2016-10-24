@@ -103,5 +103,22 @@
 @media (min-width: 1200px) {
 	.download {
 		padding-left: 130px;
+		margin-bottom: 121px;
+	}
+
+	.download__title {
+		padding-top: 16px;
+		padding-bottom: 10px;
+		font-size: 50px;
+	}
+
+	.download__list {
+		margin-bottom: 48px;
+	}
+
+	.download__item {
+		&--android {
+			background-position: 3px 1px;
+		}
 	}
 }

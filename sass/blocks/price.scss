@@ -144,12 +144,33 @@
 
 @media (min-width: 1200px) {
 	.price {
-		padding-top: 100px;
+		padding-top: 154px;
+		padding-bottom: 63px;
 		background-position: center 0;
 	}
 
 	.price__table {
 		margin-left: 130px;
 		width: 940px;
+	}
+
+	.price__title-cell {
+		padding-top: 16px;
+		padding-bottom: 20px;
+	}
+
+	.price__title {
+		font-size: 18px;
+
+		&--thin {
+			font-size: 24px;
+		}
+	}
+
+	.price__item {
+		padding-bottom: 17px;
+		padding-top: 17px;
+		padding-left: 21px;
+		font-size: 18px;
 	}
 }

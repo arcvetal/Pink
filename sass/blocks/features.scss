@@ -88,32 +88,50 @@
 	}
 
 	.features__title {
+		margin-top: 2px;
 		font-size: 50px;
 
 		&--thin {
 			padding-left: 240px;
 			padding-right: 240px;
+			margin-top: -2px;
+			margin-bottom: 77px;
 		}
 
 		&--short {
+			padding-top: 5px;
+			padding-left: 16px;
 			font-size: 30px;
 			line-height: 30px;
+		}
+
+		&--last {
+			padding-left: 0;
 		}
 	}
 
 	.features__content {
 		display: flex;
-		justify-content: space-between;
-		padding-left: 130px;
-		padding-right: 130px;
+		justify-content: space-around;
+		padding-left: 121px;
+		padding-right: 114px;
 		padding-top: 0;
 		background-position: 0 0;
 		background-image: url(../../img/bg-triangle-white.svg);
 	}
 
+	.features__text {
+		min-width: 250px;
+		padding-top: 14px;
+		margin-left: -4px;
+		font-size: 18px;
+		line-height: 29px;
+	}
+
 	.features__wrapper {
 		width: 225px;
 		padding-top: 350px;
+		padding-left: 0;
 		text-align: center;
 		background-repeat: no-repeat;
 		background-position: center 0;
