@@ -154,6 +154,7 @@
 
 @media (min-width: 1200px) {
 	.gallery__title {
+		padding-bottom: 72px;
 		padding-left: 300px;
 		padding-right: 300px;
 	}
@@ -174,11 +175,13 @@
 	}
 
 	.gallery__descr {
+		padding-right: 28px;
 
 		&--wide {
 			width: 940px;
 			flex-direction: row;
 			justify-content: space-between;
+			padding-right: 30px;
 		}
 	}
 
@@ -187,9 +190,11 @@
 	}
 
 	.gallery__item {
+		margin-bottom: 50px;
 
 		&--wide {
 			width: 1200px;
+			margin-bottom: 48px;
 		}
 	}
 
