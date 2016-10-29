@@ -228,6 +228,10 @@
 	&--pink {
 		color:$pink-color;
 	}
+
+	&--hidden {
+		display: none;
+	}
 }
 
 
@@ -441,16 +445,17 @@
 
 @media (min-width: 1200px) {
 	.form__title {
-		padding-top: 90px;
+		padding-top: 76px;
 		padding-left: 200px;
 		padding-right: 200px;
 	}
 
 	.form__flex-wrapper {
 		display: flex;
-		padding-top: 60px;
+		padding-top: 55px;
 		padding-left: 130px;
 		padding-right: 130px;
+		margin-bottom: 0;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
@@ -459,15 +464,18 @@
 		&--name {
 			order: 1;
 			width: 435px;
+			height: 347px;
 			padding-left: 0;
 			padding-right: 0;
+			padding-top: 3px;
 		}
 
 		&--check {
 			order: 4;
-			width: 100%;
-			margin-left: 0;
-			margin-right: 0;
+    	width: 100%;
+    	margin-left: 0;
+    	margin-right: 0;
+    	padding-bottom: 24px;
 		}
 
 		&--contact {
@@ -476,20 +484,24 @@
 			justify-content: space-between;
 			margin-left: 0;
 			margin-right: 0;
+			margin-top: 11px;
 		}
 
 		&--os {
 			order: 2;
-			width: 271px;
-			height: 280px;
+			width: 313px;
+			height: 224px;
+			padding-top: 74px;
+			padding-bottom: 0;
 			margin-left: 0;
 			margin-right: 0;
-			margin-top: 40px;
+			margin-top: 22px;
 		}
 
 		&--textarea {
 			order: 5;
 			width: 100%;
+			padding-bottom: 43px;
 			margin-left: 0;
 			margin-right: 0;
 			margin-bottom: 65px;
@@ -498,11 +510,12 @@
 
 	.form__item-title {
 		&--contact {
-			margin-left: 300px;
+			margin-left: 280px;
+			margin-bottom: 34px;
 		}
 
 		&--check {
-			margin-left: 120px;
+			margin-left: 133px;
 		}
 
 		&--radio {
@@ -511,23 +524,49 @@
 			padding-right: 10px;
 			margin-left: -90px;
 		}
+
+		&--textarea {
+			margin-bottom: 33px;
+		}
 	}
 
 	.form__field {
+		padding-bottom: 0;
+		margin-bottom: 0;
+
+		&--radio {
+			padding-left: 15px;
+			margin-bottom: 50px;
+		}
+
 		&--contact {
 			width: 375px;
+		}
+
+		&--check {
+			height: 81px;
+			width: 310px;
 		}
 	}
 
 	.form__check-wrapper {
 		display: flex;
-		height: 163px;
-		width: 315px;
+		height: 170px;
+		box-sizing: border-box;
 		flex-wrap: wrap;
 		flex-direction: column;
+		margin-top: -26px;
 	}
 
 	.form__required-field {
 		order: 7;
+
+		&--hidden {
+		display: inline;
+	}
+	}
+
+	.form__textarea {
+		height: 128px;
 	}
 }
