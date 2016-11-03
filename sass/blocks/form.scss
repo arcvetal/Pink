@@ -373,9 +373,42 @@
 		}
 
 		&--contact {
+			position: relative;
 			flex-wrap: wrap;
 			padding-bottom: 15px;
 			margin-bottom: 13px;
+		}
+
+		&--number {
+			&::after {
+				position: absolute;
+    		content: "";
+    		top: 2px;
+    		right: 2px;
+    		display: block;
+    		width: 60px;
+    		height: 60px;
+				background-color: $light-gray-color;
+				background-image: url(../../img/icon-phone.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+
+		&--mail {
+			&::after {
+				position: absolute;
+    		content: "";
+    		top: 2px;
+    		right: 2px;
+    		display: block;
+    		width: 60px;
+    		height: 60px;
+				background-color: $light-gray-color;
+				background-image: url(../../img/icon-mail.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
 		}
 
 		&--radio {

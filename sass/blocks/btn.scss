@@ -127,6 +127,21 @@
 		}
 	}
 
+	&--modal-ok {
+		height: 65px;
+    width: 280px;
+    margin-left: -5px;
+    margin-top: 43px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 30px;
+    background-color: #2aab6d;
+	}
 
 }
 
