@@ -28,14 +28,14 @@
 		height: 24px;
 		border: none;
 		border-radius: 0;
-		background-image: url(../../img/icon-menu-burger.svg);
+		background-image: url(../img/icon-menu-burger.svg);
 
 		&:hover {
-			background: url(../../img/icon-menu-burger-hover.svg);
+			background: url(../img/icon-menu-burger-hover.svg);
 		}
 
 		&:active {
-			background: url(../../img/icon-menu-burger-act.svg);
+			background: url(../img/icon-menu-burger-act.svg);
 		}
 	}
 
@@ -65,7 +65,7 @@
 		margin-right: 15px;
 		border: none;
 		border-radius: 0;
-		background-image: url(../../img/icon-heart.svg);
+		background-image: url(../img/icon-heart.svg);
 		background-repeat: no-repeat;
 
 		&:hover {

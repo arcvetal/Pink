@@ -190,7 +190,7 @@
 		&:checked+.form__item-label--check::before {
 			background-repeat: no-repeat;
 			background-position: center;
-			background-image: url(../../img/icon-yes-checkbox.svg);
+			background-image: url(../img/icon-yes-checkbox.svg);
 		}
 	}
 
@@ -389,7 +389,7 @@
     		width: 60px;
     		height: 60px;
 				background-color: $light-gray-color;
-				background-image: url(../../img/icon-phone.svg);
+				background-image: url(../img/icon-phone.svg);
 				background-repeat: no-repeat;
 				background-position: center;
 			}
@@ -405,7 +405,7 @@
     		width: 60px;
     		height: 60px;
 				background-color: $light-gray-color;
-				background-image: url(../../img/icon-mail.svg);
+				background-image: url(../img/icon-mail.svg);
 				background-repeat: no-repeat;
 				background-position: center;
 			}

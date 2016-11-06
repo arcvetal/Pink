@@ -1,8 +1,8 @@
 .map {
 	height: 220px;
-	background-image: url(../../img/icon-map-marker.svg),
-		url(../../img/bg-triangle-white-footer.svg),
-		url(../../img/bg-map-tablet@1x.jpg);
+	background-image: url(../img/icon-map-marker.svg),
+		url(../img/bg-triangle-white-footer.svg),
+		url(../img/bg-map-tablet@1x.jpg);
 	background-position: 143px 108px, center -3px, -190px -432px;
 	background-repeat: no-repeat;
 	background-size: 36px 36px, 500px 50px, 700px 848px;
@@ -19,9 +19,9 @@
 @media (min-width: 1200px) {
 	.map {
 		height: 500px;
-		background-image: url(../../img/icon-map-marker.svg),
-			url(../../img/bg-triangle-white-footer.svg),
-			url(../../img/bg-map-desktop@1x.jpg);
+		background-image: url(../img/icon-map-marker.svg),
+			url(../img/bg-triangle-white-footer.svg),
+			url(../img/bg-map-desktop@1x.jpg);
 		background-position: 582px 264px, center 0, 0 -277px;
 		background-size: 36px 36px, 1200px 105px, 1200px 976px;
 	}

@@ -4,7 +4,7 @@
 	padding-bottom: 40px;
 	background-color: $bg-color;
 	background-position: center -30px;
-	background-image: url(../../img/bg-triangle-white.svg);
+	background-image: url(../img/bg-triangle-white.svg);
 	background-repeat: no-repeat;
 }
 
@@ -83,12 +83,12 @@
 
 	&--yes {
 		background-size: 30px;
-		background-image: url(../../img/icon-yes.svg);
+		background-image: url(../img/icon-yes.svg);
 	}
 
 	&--no {
 		background-size: 27px;
-		background-image: url(../../img/icon-no.svg);
+		background-image: url(../img/icon-no.svg);
 	}
 }
 

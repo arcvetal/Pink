@@ -36,8 +36,8 @@
 		padding-bottom: 50px;
 		text-align: left;
 		background:
-			url(../../img/icon-editor-diagram-fill.svg),
-			url(../../img/icon-timer.svg);
+			url(../img/icon-editor-diagram-fill.svg),
+			url(../img/icon-timer.svg);
 		background-repeat: no-repeat;
 		background-size: 204px, 240px;
 		background-position: 58px 67px, 41px 12px;
@@ -152,7 +152,7 @@
 		padding-top: 150px;
 		padding-left: 240px;
 		padding-right: 240px;
-		background-image: url(../../img/icon-quotes.svg);
+		background-image: url(../img/icon-quotes.svg);
 		background-repeat: no-repeat;
 		background-position: center 35px;
 
@@ -164,17 +164,17 @@
 			height: 42px;
 			top: 177px;
 			left: 130px;
-			background-image: url(../../img/icon-review-arrow-left.svg);
+			background-image: url(../img/icon-review-arrow-left.svg);
 			background-repeat: no-repeat;
 		}
 
 		&:hover::before {
 			cursor: pointer;
-			background-image: url(../../img/icon-review-arrow-left-hover.svg);
+			background-image: url(../img/icon-review-arrow-left-hover.svg);
 		}
 
 		&:active::before {
-			background-image: url(../../img/icon-review-arrow-left-act.svg);
+			background-image: url(../img/icon-review-arrow-left-act.svg);
 		}
 
 		&::after {
@@ -185,17 +185,17 @@
 			height: 42px;
 			top: 177px;
 			right: 130px;
-			background-image: url(../../img/icon-review-arrow-right.svg);
+			background-image: url(../img/icon-review-arrow-right.svg);
 			background-repeat: no-repeat;
 		}
 
 		&:hover::after {
 			cursor: pointer;
-			background-image: url(../../img/icon-review-arrow-right-hover.svg);
+			background-image: url(../img/icon-review-arrow-right-hover.svg);
 		}
 
 		&:active::after {
-			background-image: url(../../img/icon-review-arrow-right-act.svg);
+			background-image: url(../img/icon-review-arrow-right-act.svg);
 		}
 	}
 

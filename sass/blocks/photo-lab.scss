@@ -52,40 +52,40 @@
 
 	&--crop {
 		margin-left: 17px;
-		background-image: url(../../img/icon-editor-crop.svg);
+		background-image: url(../img/icon-editor-crop.svg);
 
 		&:hover {
-			background-image: url(../../img/icon-editor-crop-hover.svg);
+			background-image: url(../img/icon-editor-crop-hover.svg);
 		}
 
 		&:active {
-			background-image: url(../../img/icon-editor-crop-pink.svg);
+			background-image: url(../img/icon-editor-crop-pink.svg);
 		}
 	}
 
 	&--fill {
 		margin-left: 12px;
-		background-image: url(../../img/icon-editor-fill.svg);
+		background-image: url(../img/icon-editor-fill.svg);
 
 		&:hover {
-			background-image: url(../../img/icon-editor-fill-hover.svg);
+			background-image: url(../img/icon-editor-fill-hover.svg);
 		}
 
 		&:active {
-			background-image: url(../../img/icon-editor-fill-pink.svg);
+			background-image: url(../img/icon-editor-fill-pink.svg);
 		}
 	}
 
 	&--contrast {
-		background-image: url(../../img/icon-editor-contrast.svg);
+		background-image: url(../img/icon-editor-contrast.svg);
 		background-position: 17px 8px;
 
 		&:hover {
-			background-image: url(../../img/icon-editor-contrast-hover.svg);
+			background-image: url(../img/icon-editor-contrast-hover.svg);
 		}
 
 		&:active {
-			background-image: url(../../img/icon-editor-contrast-pink.svg);
+			background-image: url(../img/icon-editor-contrast-pink.svg);
 		}
 	}
 }
@@ -170,30 +170,30 @@
 
 		&--crop {
 			margin-left: 2px;
-			background-image: url(../../img/icon-editor-crop-pink.svg);
+			background-image: url(../img/icon-editor-crop-pink.svg);
 
 			&:hover {
-				background-image: url(../../img/icon-editor-crop-pink.svg);
+				background-image: url(../img/icon-editor-crop-pink.svg);
 			}
 		}
 
 		&--fill {
 			margin-left: 2px;
 			margin-top: 3px;
-			background-image: url(../../img/icon-editor-fill-pink.svg);
+			background-image: url(../img/icon-editor-fill-pink.svg);
 
 			&:hover {
-				background-image: url(../../img/icon-editor-fill-pink.svg);
+				background-image: url(../img/icon-editor-fill-pink.svg);
 			}
 		}
 
 		&--contrast {
 			background-position: 8px 5px;
 			background-size: 16px;
-			background-image: url(../../img/icon-editor-contrast-pink.svg);
+			background-image: url(../img/icon-editor-contrast-pink.svg);
 
 			&:hover {
-				background-image: url(../../img/icon-editor-contrast-pink.svg);
+				background-image: url(../img/icon-editor-contrast-pink.svg);
 			}
 		}
 	}

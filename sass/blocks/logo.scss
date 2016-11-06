@@ -14,7 +14,7 @@
 		margin: 0 auto;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-image: url(../../img/logo-pink-blue-mobile.svg);
+		background-image: url(../img/logo-pink-blue-mobile.svg);
 	}
 }
 
@@ -34,7 +34,7 @@
 	}
 
 	.logo--tablet::hover {
-		background-image: url(../../img/logo-pink-white-tablet-hover.svg);
+		background-image: url(../img/logo-pink-white-tablet-hover.svg);
 	}
 
 	.logo {
@@ -47,7 +47,7 @@
 @media (min-width: 1200px) {
 	.logo {
 		&--footer {
-			background-image: url(../../img/logo-pink-blue-desktop.svg);
+			background-image: url(../img/logo-pink-blue-desktop.svg);
 		}
 	}
 	.logo__image {
