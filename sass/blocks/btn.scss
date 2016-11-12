@@ -1,0 +1,212 @@
+.btn {
+	width: 280px;
+	height: 55px;
+	margin-bottom: 30px;
+	color: white;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	background-color: transparent;
+	border: 3px solid white;
+	border-radius: 25px;
+	outline: 0;
+
+		&:hover {
+			color: $pink-color;
+			background-color: white;
+		}
+
+		&:active {
+			color: rgba($pink-color, 0.3);
+		}
+
+	&--toggle {
+		position: absolute;
+		top: 25px;
+		right: 20px;
+		width: 50px;
+		height: 24px;
+		border: none;
+		border-radius: 0;
+		background-image: url(../img/icon-menu-burger.svg);
+
+		&:hover {
+			background: url(../img/icon-menu-burger-hover.svg);
+		}
+
+		&:active {
+			background: url(../img/icon-menu-burger-act.svg);
+		}
+	}
+
+	&--cross {
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		border: none;
+		border-radius: 0;
+		background-image: url(/img/icon-menu-cross.svg);
+
+		&:hover {
+			background: url(/img/icon-menu-cross-hover.svg);
+		}
+
+		&:active {
+			background-image: url(/img/icon-menu-cross-act.svg);
+		}
+	}
+
+	&--like-heart {
+		width: 13px;
+		height: 13px;
+		margin-bottom: 0;
+		margin-right: 15px;
+		border: none;
+		border-radius: 0;
+		background-image: url(../img/icon-heart.svg);
+		background-repeat: no-repeat;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+
+	&--post {
+		color: $pink-color;
+		margin-left: -20px;
+		border-color: $pink-color;
+		margin-bottom: 12px;
+
+		&:hover {
+			color: white;
+			background-color: $pink-color;
+		}
+
+		&:active {
+			color: rgba(white, 0.3);
+		}
+	}
+
+	&--cancel {
+		margin-left: -20px;
+		color: rgba($label-color, 0.1);
+		border-color: rgba($label-color, 0.1);
+
+		&:hover {
+			cursor: pointer;
+			color: rgba($label-color, 0.3);
+			border-color: rgba($label-color, 0.3);
+			background-color: transparent;
+		}
+
+		&:active {
+			color: rgba(white, 0.3);
+			border-color: transparent;
+			background-color: rgba($label-color, 0.3);
+		}
+	}
+
+	&--green {
+		height: 68px;
+		width: 285px;
+		box-sizing: border-box;
+		border-radius: 0;
+		text-transform: uppercase;
+		line-height: 30px;
+		background-color: #2aab6d;
+
+		&:hover {
+			color: white;
+			background-color: #1c9b5e;
+		}
+
+		&:active {
+			color: rgba(white, 0.3);
+		}
+	}
+
+	&--modal-ok {
+		height: 65px;
+    width: 280px;
+    margin-left: -5px;
+    margin-top: 43px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 30px;
+    background-color: #2aab6d;
+	}
+
+}
+
+@media (min-width: 700px) {
+	.btn {
+
+		&--download {
+			width: 300px;
+		}
+		&--toggle {
+			top: 44px;
+			right: 40px;
+		}
+
+		&--cross {
+			top: 40px;
+		}
+
+		&--like-heart {
+			margin-right: 3px;
+		}
+
+		&--post {
+			width: 260px;
+			margin-bottom: 25px;
+		}
+
+		&--cancel {
+			width: 260px;
+		}
+
+		&--green {
+			order: 6;
+			width: 300px;
+			height: 63px;
+			border: none;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.btn {
+		&--toggle {
+			display: none;
+		}
+
+		&--download {
+			font-size: 21px;
+			margin-bottom: 52px;
+		}
+
+		&--post {
+			width: 183px;
+			margin: 0;
+		}
+
+		&--cancel {
+			width: 183px;
+			margin-right: 20px;
+		}
+
+		&--green {
+			order: 6;
+			margin-bottom: 0;
+		}
+
+	}
+}

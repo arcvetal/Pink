@@ -1,0 +1,56 @@
+.logo {
+	position: relative;
+	height: 63px;
+
+	& a {
+		width: 75px;
+		margin-left: 10px;
+	}
+
+	&--footer {
+		width: 147px;
+		height: 41px;
+		padding-top: 30px;
+		margin: 0 auto;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url(../img/logo-pink-blue-mobile.svg);
+	}
+}
+
+.logo__image {
+	width: 75px;
+	position: absolute;
+	left: 20px;
+	top: 25px;
+}
+
+@media (min-width: 700px) {
+
+	.logo__image {
+		width: 150px;
+		padding-top: 0;
+		padding-left: 18px;
+	}
+
+	.logo--tablet::hover {
+		background-image: url(../img/logo-pink-white-tablet-hover.svg);
+	}
+
+	.logo {
+		&--footer {
+			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.logo {
+		&--footer {
+			background-image: url(../img/logo-pink-blue-desktop.svg);
+		}
+	}
+	.logo__image {
+		padding-left: 109px;
+	}
+}

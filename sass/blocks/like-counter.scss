@@ -1,0 +1,48 @@
+.like-counter {
+	padding-top: 10px;
+
+	&--wide {
+		padding-top: 0;
+	}
+}
+
+.like-counter__number {
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: $pink-color;
+}
+
+@media (min-width: 700px) {
+	.like-counter {
+		margin-top: auto;
+		order: 2;
+		display: flex;
+		width: 243px;
+		padding-top: 0;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+
+		&--wide {
+			width: 123px;
+			align-items: baseline;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.like-counter {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+
+		&--wide {
+			order: 2;
+			width: 120px;
+			margin: 0;
+		}
+	}
+}

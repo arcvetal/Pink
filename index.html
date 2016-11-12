@@ -1,137 +1,212 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<title>Главная</title>
 </head>
+
 <body>
 	<div class="wrapper">
-		<header class="main-nav">
-			<ul class="main-nav__list">
-				<li class="main-nav__item">
-					<img src="" alt="logo" class="logo"></li>
-				<li class="main-nav__item">
-					<a>Главная</a>
-				</li>
-				<li class="main-nav__item">
-					<a href="photo.html">Фотографии</a>
-				</li>
-				<li class="main-nav__item">
-					<a href="form.html">Конкурс</a>
-				</li>
-				<li class="main-nav__item">
-					<a href="https://htmlacademy.ru/">Html academy</a>
-				</li>
-			</ul>
-			<div class="main-nav__wallpaper">
-				<div class="main-nav__wrapper-button">
-					<button type="button" class="main-nav__button">
-						<img src="" alt="logo" class="logo"></button>
+		<header class="page-header">
+			<nav class="main-nav">
+				<div class="main-nav__wrapper">
+					<div class="main-nav__menu">
+						<div class="logo">
+							<a href="index.html">
+								<picture>
+									<source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg" class="logo--tablet">
+									<img src="img/logo-pink-white-mobile.svg" class="logo__image" width="75" height="23">
+								</picture>
+							</a>
+						</div>
+						<button type="button" class="btn  btn--cross">
+						</button>
+					</div>
+					<ul class="main-nav__list">
+						<li class="main-nav__item  main-nav__item--current">
+							<a>Главная</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="photo.html">Фотографии</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="form.html">Конкурс</a>
+						</li>
+						<li class="main-nav__item">
+							<a href="https://htmlacademy.ru/">Html academy</a>
+						</li>
+					</ul>
 				</div>
-			</div>
-		</header>
-		<main>
+				<div class="main-nav__wrapper-button">
+					<div class="logo">
+						<a href="index.html">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+							<source media="(min-width: 700px)" srcset="img/logo-pink-white-tablet.svg">
+							<img src="img/logo-pink-white-mobile.svg" class="logo__image" width="75" height="23">
+						</picture>
+						</a>
+					</div>
+					<button type="button" class="btn  btn--toggle">
+					</button>
+				</div>
+			</nav>
 			<div class="download">
-				<button type="button" class="btn">Скачать приложение</button>
+				<h2 class="download__title">Взгляните на жизнь иначе!</h2>
+				<button type="button" class="btn  btn--download">Скачать приложение</button>
 				<ul class="download__list">
-					<li class="download__item">
+					<li class="download__item  download__item--apple">
 						<a href=""></a>
 					</li>
-					<li class="download__item">
+					<li class="download__item  download__item--android">
 						<a href=""></a>
 					</li>
-					<li class="download__item">
+					<li class="download__item  download__item--windows">
 						<a href=""></a>
 					</li>
 				</ul>
 				<div class="download__info">
-					Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8
+					Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8
 				</div>
 			</div>
+		</header>
+
+		<main>
 			<div class="features">
-				<h1 class="features__title">Устали от серости мегаполиса ?</h1>
-				<h1 class="features__title">Нам есть, что вам предложить!</h1>
-				<div class="features__wrapper">
-					<h3 class="features__title">Поднимает настроение</h3>
-					<p class="features__text">
-						Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-					</p>
-				</div>
-				<div class="features__wrapper">
-					<h3 class="features__title">Меняет мир вокруг</h3>
-					<p class="features__text">
-						Сделайте снимок и украсте его смайликом или текстовой подписью, чтобы усилить эффект
-					</p>
-				</div>
-				<div class="features__wrapper">
-					<h3 class="features__title">Заводит новых друзей</h3>
-					<p class="features__text">
-						Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-					</p>
+				<h1 class="features__title">Устали от серости мегаполиса?</h1>
+				<h1 class="features__title  features__title--thin">Нам есть, что вам предложить!</h1>
+				<div class="features__content">
+
+					<div class="features__wrapper  features__wrapper--gray">
+						<h3 class="features__title  features__title--short">Поднимает настроение</h3>
+						<p class="features__text">
+							Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+						</p>
+					</div>
+
+					<div class="features__wrapper  features__wrapper--pink">
+						<h3 class="features__title  features__title--short">Меняет мир вокруг</h3>
+						<p class="features__text">
+							Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+						</p>
+					</div>
+
+					<div class="features__wrapper  features__wrapper--smile">
+						<h3 class="features__title  features__title--short  features__title--last">Заводит новых друзей</h3>
+						<p class="features__text">
+							Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+						</p>
+					</div>
+
 				</div>
 			</div>
 			<div class="reviews">
+				<div class="reviews__diagram">
+					<h3 class="reviews__diagram-title">Эффект на 24 часа!</h3>
+					<div class="reviews__diagram-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</div>
+					<a href="#" class="reviews__diagram-link">Узнать больше об исследовании</a>
+					<span class="reviews__diagram-time">24</span>
+				</div>
 				<div class="reviews__item">
 					<span class="reviews__author">Николай Петров</span>
+					<span class="reviews__author-info">25 лет, водитель трамвая</span>
 					<p class="reviews__text">
-						"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложеной фотографии!"
+						«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
 					</p>
+					<div class="paginator">
+						<input type="radio" class="paginator__item" name="reviews" id="first-rev" checked>
+						<label class="paginator__label" for="first-rev"></label>
+						<input type="radio" class="paginator__item" name="reviews" id="second-rev">
+						<label class="paginator__label" for="second-rev"></label>
+						<input type="radio" class="paginator__item" name="reviews" id="third-rev">
+						<label class="paginator__label" for="third-rev"></label>
+					</div>
 				</div>
 			</div>
 			<div class="price">
 				<table class="price__table">
 					<tr>
-						<td></td>
-						<td>
-							База
-							<span>1,99 usd</span>
+						<td class="price__title-cell  price__title-cell--empty"></td>
+						<td class="price__title-cell">
+							<p class="price__title">База</p>
+							<p class="price__title  price__title--thin">1,99 usd</p>
 						</td>
-						<td>
-							Стандарт
-							<span>3,99 usd</span>
+						<td class="price__title-cell  price__title-cell--hit">
+							<p class="price__title">Стандарт</p>
+							<p class="price__title  price__title--thin">3,99 usd</p>
 						</td>
-						<td>
-							Анлим
-							<span>9,99 usd</span>
+						<td class="price__title-cell">
+							<p class="price__title">Анлим</p>
+							<p class="price__title  price__title--thin">9,99 usd</p>
 						</td>
 					</tr>
 					<tr>
-						<td>Розовый фильтр</td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td class="price__item">Розовый фильтр</td>
+						<td class="price__item  price__item--yes"></td>
+						<td class="price__item  price__item--yes"><span class="price__text-hidden">Розовый фильтр</span></td>
+						<td class="price__item  price__item--yes"></td>
 					</tr>
 					<tr>
-						<td>Смайлики</td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td class="price__item">Смайлики</td>
+						<td class="price__item  price__item--no"></td>
+						<td class="price__item  price__item--yes"><span class="price__text-hidden">Смайлики</span></td>
+						<td class="price__item  price__item--yes"></td>
 					</tr>
 					<tr>
-						<td>Комментарии</td>
-						<td></td>
-						<td></td>
-						<td></td>
+						<td class="price__item">Комментарии</td>
+						<td class="price__item  price__item--no"></td>
+						<td class="price__item  price__item--no"><span class="price__text-hidden">Комментарии</span></td>
+						<td class="price__item  price__item--yes"></td>
 					</tr>
 				</table>
+				<div class="paginator  paginator--table">
+					<input type="radio" class="paginator__item" name="price" id="first-pr">
+					<label class="paginator__label" for="first-pr"></label>
+					<input type="radio" class="paginator__item" name="price" id="second-pr" checked>
+					<label class="paginator__label" for="second-pr"></label>
+					<input type="radio" class="paginator__item" name="price" id="third-pr">
+					<label class="paginator__label" for="third-pr"></label>
+				</div>
 			</div>
 			<div class="contacts">
 				<h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-				<div class="contacts__item">
-					Звоните
-					<span class="contacts__info">+7(812)555-66-66</span>
-				</div>
-				<div class="contacts__item">
-					Пишите
-					<span class="contacts__info">mail@htmlacademy.ru</span>
-				</div>
-				<div class="contacts__item">
-					Приезжайте в гости
-					<span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+				<div class="contacts__wrapper">
+					<div class="contacts__item">
+						Звоните:
+						<span class="contacts__info">+7 (812) 555-66-66</span>
+					</div>
+					<div class="contacts__item  contacts__item--mail">
+						Пишите:
+						<span class="contacts__info">mail@htmlacademy.ru</span>
+					</div>
+					<div class="contacts__item">
+						Приезжайте в гости:
+						<span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+					</div>
 				</div>
 			</div>
-			<div class="map"></div>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.32089461580403!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1478453407570" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
 		</main>
+		<footer class="footer">
+			<div class="logo  logo--footer"></div>
+			<div class="social-block">
+				<ul class="social-block__list">
+					<li class="social-block__item  social-block__item--twitter"><a href="#">twitter</a></li>
+					<li class="social-block__item  social-block__item--facebook"><a href="#">facebook</a></li>
+					<li class="social-block__item  social-block__item--youtube"><a href="#">youtube</a></li>
+				</ul>
+			</div>
+			<div class="footer__copyright">
+				Разработано
+				<a href="https://htmlacademy.ru/">
+					<img class="footer__logo" src="img/htmlacademy.svg" width="27" height="35" alt="HTML Академия" onmouseover="this.src='img/htmlacademy-hover.svg'; this.width=27;this.height=35;" onmouseout="this.src='img/htmlacademy.svg'; this.width=27;this.height=35;"
+					onclick="this.src='img/htmlacademy-act.svg'; this.width=27;this.height=35;"/></a>
+			</div>
+		</footer>
 	</div>
+	<script src="js/main.js"></script>
 </body>
 </html>

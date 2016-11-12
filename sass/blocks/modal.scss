@@ -1,0 +1,64 @@
+.modal {
+	display: none;
+	position: fixed;
+  top: 140px;
+  height: 290px;
+	width: 320px;
+  padding: 30px 25px 60px 25px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+
+	&--fail {
+		display: none;
+		height: 380px;
+		background-color: $bg-color;
+		padding: 0;
+	}
+}
+
+.modal__message {
+	padding: 25px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+	background-color: white;
+}
+
+.modal__title {
+	display: block;
+	padding-bottom: 25px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+@media (min-width: 700px) {
+	.modal {
+		width: 460px;
+		height: 365px;
+		left: calc(50vw - 230px);
+		padding: 30px 80px 50px 80px;
+
+		&--fail {
+			height: 430px;
+			padding: 0;
+
+		}
+	}
+
+	.modal__message {
+		padding: 35px 75px 35px 75px;
+	}
+
+	.modal__title {
+		font-size: 30px;
+		line-height: 40px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.modal__text {
+		font-size: 18px;
+		line-height: 24px;
+
+	}
+}

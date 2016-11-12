@@ -1,0 +1,318 @@
+.photo-lab__title {
+	padding-top: 22px;
+	margin-bottom: 42px;
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+.photo-lab__wrapper {
+	padding-top: 20px;
+	padding-left: 18px;
+	background-color: $bg-color;
+}
+
+.photo-lab__wrapper-image {
+	width: 280px;
+	height: 375px;
+	margin-bottom: 20px;
+}
+
+.photo-lab__console {
+	position: relative;
+	padding-top: 20px;
+
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 201px;
+		left: -20px;
+		height: 1px;
+		width: 320px;
+		background-color: #dddfe0;
+	}
+}
+
+.photo-lab__container {
+	padding-left: 20px;
+	text-align: left;
+}
+
+.photo-lab__wrapper-tools {
+	display: inline-block;
+	width: 80px;
+	padding-bottom: 20px;
+}
+
+.photo-lab__tool {
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+
+	&--crop {
+		margin-left: 17px;
+		background-image: url(../img/icon-editor-crop.svg);
+
+		&:hover {
+			background-image: url(../img/icon-editor-crop-hover.svg);
+		}
+
+		&:active {
+			background-image: url(../img/icon-editor-crop-pink.svg);
+		}
+	}
+
+	&--fill {
+		margin-left: 12px;
+		background-image: url(../img/icon-editor-fill.svg);
+
+		&:hover {
+			background-image: url(../img/icon-editor-fill-hover.svg);
+		}
+
+		&:active {
+			background-image: url(../img/icon-editor-fill-pink.svg);
+		}
+	}
+
+	&--contrast {
+		background-image: url(../img/icon-editor-contrast.svg);
+		background-position: 17px 8px;
+
+		&:hover {
+			background-image: url(../img/icon-editor-contrast-hover.svg);
+		}
+
+		&:active {
+			background-image: url(../img/icon-editor-contrast-pink.svg);
+		}
+	}
+}
+
+.photo-lab__wrapper-scale {
+	padding-top: 7px;
+}
+
+.photo-lab__scale {
+	position: relative;
+	margin-bottom: 50px;
+	width: 240px;
+	height: 2px;
+	background-color: $label-color;
+}
+
+.photo-lab__slider {
+	height: 14px;
+	width: 14px;
+	top: -6px;
+	right: 33px;
+	position: absolute;
+	background-color: $bg-color;
+	border: 2px solid $pink-color;
+	box-sizing: border-box;
+	border-radius: 50%;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $pink-color;
+	}
+}
+
+.photo-lab__wrapper-scale--hidden {
+	display: none;
+}
+
+.photo-lab__btn-wrapper {
+	padding-top: 22px;
+	padding-bottom: 12px;
+}
+
+
+
+@media (min-width: 700px) {
+	.photo-lab__wrapper {
+		display: flex;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 58px;
+		padding-bottom: 10px;
+		justify-content: space-between;
+
+	}
+
+	.photo-lab__container {
+		display: flex;
+		flex-direction: column;
+		padding-left: 0;
+		margin-bottom: 30px;
+	}
+
+	.photo-lab__title {
+		padding-top: 27px;
+		margin-bottom: 68px;
+		font-size: 18px;
+	}
+
+	.photo-lab__wrapper-tools {
+		display: flex;
+		position: relative;
+		height: 56px;
+		width: 100%;
+		padding-top: 7px;
+		margin-bottom: 16px;
+		box-sizing: border-box;
+		border-bottom: 1px solid $gray-color;
+	}
+
+	.photo-lab__tool {
+		background-size: 24px;
+
+		&--crop {
+			margin-left: 2px;
+			background-image: url(../img/icon-editor-crop-pink.svg);
+
+			&:hover {
+				background-image: url(../img/icon-editor-crop-pink.svg);
+			}
+		}
+
+		&--fill {
+			margin-left: 2px;
+			margin-top: 3px;
+			background-image: url(../img/icon-editor-fill-pink.svg);
+
+			&:hover {
+				background-image: url(../img/icon-editor-fill-pink.svg);
+			}
+		}
+
+		&--contrast {
+			background-position: 8px 5px;
+			background-size: 16px;
+			background-image: url(../img/icon-editor-contrast-pink.svg);
+
+			&:hover {
+				background-image: url(../img/icon-editor-contrast-pink.svg);
+			}
+		}
+	}
+
+	.photo-lab__wrapper-image img {
+		width: 300px;
+		height: 400px;
+	}
+
+	.photo-lab__console {
+		width: 275px;
+		padding-top: 0;
+
+		&::after {
+			display: none;
+		}
+	}
+
+	.photo-lab__wrapper-scale {
+		display: none;
+		margin-left: 4px;
+
+		&--hidden {
+			display: block;
+			padding-top: 12px;
+		}
+	}
+
+	.photo-lab__scale {
+		width: 202px;
+	}
+
+	.photo-lab__slider {
+		right: 43px;
+
+		&--fill {
+			right: 165px;
+		}
+
+		&--contrast {
+			right: 91px;
+		}
+	}
+
+	.photo-lab__btn-wrapper {
+		margin-left: 7px;
+		padding-top: 20px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.photo-lab {
+		margin-top: -37px;
+		margin-bottom: 31px;
+	}
+
+	.photo-lab__wrapper {
+		width: 940px;
+		padding-top: 40px;
+		box-sizing: border-box;
+		margin: 0 auto;
+	}
+
+	.photo-lab__container {
+		margin-bottom: 124px;
+	}
+
+	.photo-lab__console {
+		width: 434px;
+	}
+
+	.photo-lab__wrapper-tools {
+		margin-bottom: 0;
+		padding-bottom: 64px;
+	}
+
+	.photo-lab__wrapper-scale {
+		padding-top: 27px;
+		margin-left: 44px;
+	}
+
+	.photo-lab__tool {
+		background-size: 48px;
+		background-position: 0px 3px;
+
+		&--contrast {
+			background-size: 32px;
+			background-position: 10px 11px;
+		}
+	}
+
+	.photo-lab__scale {
+		width: 290px;
+	}
+
+	.photo-lab__slider {
+		right: 205px;
+
+		&--fill {
+			right: 30px;
+		}
+
+		&--contrast {
+			right: 114px;
+		}
+	}
+
+	.photo-lab__btn-wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 4px;
+	}
+
+	.photo-lab__wrapper-image {
+		width: 300px;
+		height: 400px;
+		padding-top: 15px;
+		padding-left: 40px;
+		margin-bottom: 40px;
+	}
+}
